@@ -54,7 +54,6 @@ class DecoderTest {
 	void test7() {
 		String code = "1212";
 		int result = decoder.Decode(code);
-		System.out.println(result);
 		assertEquals(5, result);
 	}
 	
@@ -62,7 +61,7 @@ class DecoderTest {
 	void test8() {
 		String code = "111";
 		int result = decoder.Decode(code);
-		System.out.println(result);
+		System.out.println("test 8 = " + result);
 		assertEquals(3, result);
 	}
 	
@@ -70,7 +69,7 @@ class DecoderTest {
 	void test9() {
 		String code = "111111";
 		int result = decoder.Decode(code);
-		System.out.println(result);
+		System.out.println("test 9 = " + result);
 		assertEquals(13, result);
 	}
 
@@ -78,7 +77,7 @@ class DecoderTest {
 	void test10() {
 		String code = "411";
 		int result = decoder.Decode(code);
-		System.out.println(result);
+		System.out.println("test 10 = " + result);
 		assertEquals(2, result);
 	}
 
@@ -86,7 +85,7 @@ class DecoderTest {
 	void test11() {
 		String code = "1011";
 		int result = decoder.Decode(code);
-		System.out.println(result);
+		System.out.println("test 11 = " + result);
 		assertEquals(2, result);
 	}
 	
@@ -94,7 +93,7 @@ class DecoderTest {
 	void test12() {
 		String code = "10101";
 		int result = decoder.Decode(code);
-		System.out.println(result);
+		System.out.println("test 12 = " + result);
 		assertEquals(1, result);
 	}
 	
