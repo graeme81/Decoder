@@ -58,4 +58,45 @@ class DecoderTest {
 		assertEquals(5, result);
 	}
 	
+	@Test
+	void test8() {
+		String code = "111";
+		int result = decoder.Decode(code);
+		System.out.println(result);
+		assertEquals(3, result);
+	}
+	
+	@Test
+	void test9() {
+		String code = "111111";
+		int result = decoder.Decode(code);
+		System.out.println(result);
+		assertEquals(13, result);
+	}
+
+	@Test
+	void test10() {
+		String code = "411";
+		int result = decoder.Decode(code);
+		System.out.println(result);
+		assertEquals(2, result);
+	}
+
+	@Test
+	void test11() {
+		String code = "1011";
+		int result = decoder.Decode(code);
+		System.out.println(result);
+		assertEquals(2, result);
+	}
+	
+	@Test
+	void test12() {
+		String code = "10101";
+		int result = decoder.Decode(code);
+		System.out.println(result);
+		assertEquals(1, result);
+	}
+	
+	
 }
